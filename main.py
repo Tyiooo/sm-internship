@@ -6,6 +6,8 @@ import uvicorn
 # Create FastAPI app
 app = FastAPI(title="T5 Translation API")
 
+tokenizer = T5Tokenizer.from_pretrained("google-t5/t5-small")
+model = T5ForConditionalGeneration.from_pretrained("google-t5/t5-small")
 
 # Pydantic models for request/response
 class TranslationRequest(BaseModel):
@@ -27,9 +29,6 @@ async def predict(request: TranslationRequest):
     """
     Translate English sentences to German using T5 model
     """
-    tokenizer = T5Tokenizer.from_pretrained("google-t5/t5-small")
-    model = T5ForConditionalGeneration.from_pretrained("google-t5/t5-small")
-
     # Handle empty input case
     if not request.sentences:
         return TranslationResponse(translations=[])

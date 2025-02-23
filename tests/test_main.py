@@ -3,6 +3,7 @@ from fastapi.testclient import TestClient
 from unittest.mock import Mock, patch
 from main import app, TranslationRequest, TranslationResponse
 
+
 client = TestClient(app)
 
 
