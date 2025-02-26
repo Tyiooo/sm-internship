@@ -1,0 +1,93 @@
+# **/.classpath
+# **/.dockerignore
+# **/.env
+# **/.coverage
+# **/.qodo
+# **/.devcontainer
+# **/.pre-commit-config.yaml
+# **/.gitignore
+# **/.project
+# **/.vs
+# **/.vscode
+# **/Dockerfile*
+# **/__pycache__
+# **/.git
+# **/.env
+# **/*.pyc
+# **/.qodo
+# **/.ruff_cache
+# .pytest_cache
+# .coverage
+# htmlcov
+# LICENSE
+# README.md
+
+# Python-specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Virtual Environment
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# IDE and Editor files
+.idea/
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+
+# Docker-specific
+Dockerfile*
+.docker/
+docker-compose*.yml
+.dockerignore
+
+# Version Control
+.git/
+.gitignore
+.gitattributes
+
+# Project metadata
+*.egg-info/
+*.egg
+.project
+.classpath
+
+# Documentation and Licenses
+docs/
+LICENSE
+README.md
+
+# Development tools
+.devcontainer/
+.pre-commit-config.yaml
+
+# Testing and Coverage
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Build and Distribution
+dist/
+build/
+*.manifest
+*.spec
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
