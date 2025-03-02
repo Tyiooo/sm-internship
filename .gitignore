@@ -175,3 +175,10 @@ cython_debug/
 
 # History of qodo commands
 .qodo/
+
+# catboost library 
+catboost_info/
+
+#mlflow
+
+mlruns/
