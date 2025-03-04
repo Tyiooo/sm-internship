@@ -1,0 +1,38 @@
+artifact_path: model
+flavors:
+  catboost:
+    catboost_version: 1.2.7
+    code: null
+    data: model.cb
+    model_type: CatBoostClassifier
+    save_format: cbm
+  python_function:
+    data: model.cb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.catboost
+    python_version: 3.12.8
+is_signature_from_type_hint: false
+mlflow_version: 2.20.3
+model_size_bytes: 147561
+model_uuid: bc23a626d5e642e1a91e97d49ef1f2b0
+run_id: 78e8b2ea4b664bf68041da96ed42fc19
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "Pregnancies", "required": true}, {"type": "double",
+    "name": "Glucose", "required": true}, {"type": "double", "name": "BloodPressure",
+    "required": true}, {"type": "double", "name": "HbA1c", "required": true}, {"type":
+    "double", "name": "LDL", "required": true}, {"type": "double", "name": "HDL",
+    "required": true}, {"type": "double", "name": "Triglycerides", "required": true},
+    {"type": "double", "name": "WaistCircumference", "required": true}, {"type": "double",
+    "name": "HipCircumference", "required": true}, {"type": "long", "name": "FamilyHistory",
+    "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-03-02 16:42:16.968337'
